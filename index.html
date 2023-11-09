@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Space Jump</title>
+</head>
+<body>
+
+<!-- Cabecera -->
+<header id="cabecera">
+    <!-- Logo -->
+    <img src="../experimento/logo.png" alt="Logo de tu Sitio Web" id="logo">
+    <!-- Barra de navegación -->
+    <nav id="barra-navegacion">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="galeria.html">Galería de Imágenes</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Resto del contenido de tu página web -->
+<div id="contenido">
+    <h1>Descubre el universo</h1> <!-- Texto mencionado -->
+    <p>Un sitio web dedicado a explorar los misterios del espacio.</p>
+
+    <div id="video-y-texto">
+        <iframe width="560" height="315" src="../experimento/nasa.mp4" title="Paracaidismo extremo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div id="texto-al-lado">
+            <p>El lanzamiento espacial, una operación técnica de alto riesgo, impulsa una nave a velocidades asombrosas, superando la gravedad terrestre en cuestión de minutos alcanzando así rápidamente altitudes de decenas de miles de kilómetros.</p>
+        </div>
+    </div>
+    <div class="titulo-galeria">
+    <h2>Explora nuestra galería sobre temas espaciales</h2> <!-- Título de la galería -->
+    </div> 
+    <div class="galeria">
+        <div class="imagen">
+            <a href="imagen1.jpg">
+                <img src="sistemasolar.jpg" alt="Imagen 1">
+            </a>
+            <h2>Sistema solar</h2>
+        </div>
+        <div class="imagen">
+            <a href="imagen2.jpg">
+                <img src="andromeda.jpg" alt="Imagen 2">
+            </a>
+            <h2>Galaxias</h2>
+        </div>
+        <div class="imagen">
+            <a href="imagen3.jpg">
+                <img src="astronauta.jpg" alt="Imagen 3">
+            </a>
+            <h2>Astronautas</h2>
+        </div>
+    </div>
+</div>
+
+<section class="formulario-seccion">
+    <h2>Contacto</h2>
+
+    <form action="/enviar_formulario" method="post">
+      <div>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+      </div>
+      <div>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+      </div>
+      <div>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br>
+      </div>
+      <input type="submit" value="Enviar">
+    </form>
+</section>
+<footer class="footer">
+    <div class="columna">
+        <img src="logo.png" alt="Logo">
+        <p>Explora los límites del universo con nosotros</p>
+    </div>
+    <div class="columna">
+        <h3>Links de Menú Rápido</h3>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+    <div class="columna">
+        <h3>Contacto</h3>
+        <p>12345 Rocket Avenue, Space City, 
+            Mars</p>
+    </div>
+
+    <div class="columna">
+        <p>Todos los derechos reservados 2023</p>
+        <div class="redes-sociales">
+            <a href="#"><img src="../experimento/face.png" alt="Facebook"></a>
+            <a href="#"><img src="../experimento/insta.png" alt="Instagram"></a>
+            <a href="#"><img src="../experimento/tiktok.png" alt="TikTok"></a>
+            <a href="#"><img src="../experimento/linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </div>
+</footer>
+<script src="../experimento/scripts.js"></script>
+</body>
+</html>

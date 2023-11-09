@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    background-image: url('../experimento/image.jpg'); /* Reemplaza con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; /* Ajusta la altura del contenedor para que sea igual a la altura de la ventana del navegador */
+   
+}
+
+    h1, h2, h3 {
+        font-family: 'Space Grotesk', sans-serif; /* Aplicar Space Grotesk a los encabezados */
+    }
+
+
+#cabecera {
+    /*background-color: #000080;*/
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el color de fondo de la cabecera con una opacidad más baja */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-image: url('../experimento/image.jpg'); /* Reemplaza con la ruta de tu imagen de fondo estrellado */
+    /*background-size: cover; */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* Agrega una sombra a la cabecera */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade una sombra al texto */
+
+}
+
+#logo {
+    height: 40px;
+    width: 50px;
+}
+
+#barra-navegacion {
+    width: 100%;
+    height: 60px; /* Ajusta la altura según sea necesario */
+    /*background-color: #333; /* Color de fondo de la barra de navegación */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+}
+
+#barra-navegacion ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+#barra-navegacion li {
+    padding: 10px;
+}
+
+#barra-navegacion a {
+    text-decoration: none;
+    color: #fff; /* Cambia el color del texto de enlace a tu preferencia */
+    font-weight: bold;
+}
+
+#contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto; /* Ajusta los márgenes horizontalmente */
+    max-width: 1200px; /* Ajusta un ancho máximo para evitar que el contenido se extienda demasiado */
+}
+
+#contenido h1 {
+    font-size: 3em;
+    margin-top: 300px;
+    margin-bottom: 0px;
+
+}
+
+#contenido p {
+    font-size: 1.5em;
+    margin-top: -3px;
+    margin-bottom: 0px;
+}
+
+#video-y-texto {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 550px auto 50px auto;
+    color: #808080;
+}
+
+#video-y-texto iframe {
+    width: 70%;
+    max-width: 560px;
+    height: 315px;
+    margin-right: 30px;
+    border-radius: 10px; /* Añade bordes redondeados al video */
+}
+
+#texto-al-lado {
+    width: 40%;
+    font-size: 1em; /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+.titulo-galeria{
+    color: #808080;
+    margin-top: 45px;
+    margin-bottom: 60px;
+}
+
+/* Estilos para la galería de imágenes */
+.galeria {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos con espacios entre ellos */
+    width: 90%; /* Ajusta el ancho de la galería según sea necesario */
+    margin: 0 auto; /* Centra la galería horizontalmente en la página */
+    color: #808080;
+}
+
+.imagen {
+    text-align: center;
+}
+
+.imagen a {
+    text-decoration: none;
+}
+
+.imagen h2 {
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
+/* Establecer un ancho específico para las imágenes */
+.imagen img {
+    width: 120%; /* Ajusta el ancho de la imagen según tus preferencias */
+    height: 150px; /* Permite que la altura se ajuste proporcionalmente */
+    border-radius: 10px; /* Agrega un borde redondeado a las imágenes */
+}
+
+.formulario-seccion {
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: skyblue;
+    max-width: 1200px; /* Ajusta el ancho máximo del formulario según sea necesario */
+    margin-bottom: 0px;
+}
+
+.formulario-seccion h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario-seccion label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.formulario-seccion input[type="text"],
+.formulario-seccion input[type="email"],
+.formulario-seccion textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 10px; /* Ajusta el margen izquierdo según sea necesario */
+    margin-left: -10px;
+}
+
+.formulario-seccion input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario-seccion input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.columna {
+    flex-basis: 25%;
+}
+
+.columna img {
+    max-width: 100px;
+    height: auto;
+}
+
+.columna h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.columna ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.columna ul li a {
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+.redes-sociales {
+    text-align: center; /* Centra los elementos de texto dentro del div */
+}
+.redes-sociales a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.redes-sociales img {
+    width: 30px; /* Ajusta el ancho de los iconos de redes sociales */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+}
